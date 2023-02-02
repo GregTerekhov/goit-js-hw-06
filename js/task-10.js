@@ -26,8 +26,8 @@ function createBoxes() {
     const createdBox = document.createElement("div");
 
     createdBox.style.backgroundColor = getRandomHexColor();
-    createdBox.style.width = originalBoxSize.concat("px");
-    createdBox.style.height = originalBoxSize.concat("px");
+    createdBox.style.width = originalBoxSize + "px";
+    createdBox.style.height = originalBoxSize + "px";
     createdBox.classList.add('.created-box');
     containerEl.append(createdBox);
   }
