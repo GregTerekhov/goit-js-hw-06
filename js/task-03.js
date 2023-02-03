@@ -22,4 +22,3 @@ const markUpListEl = images.map(itemOfGalleryEl).join("");
 galleryEl.insertAdjacentHTML('afterbegin', markUpListEl);
 galleryEl.style.display = "flex";
 galleryEl.style.gap = "16px";
-console.log(galleryEl);

@@ -25,6 +25,7 @@ function onFormSubmit(event) {
     //     console.log('name: ', name);
     //     console.log('value: ', value);
     // });
-
     console.log(formData);
+    
+    return formData;
 };

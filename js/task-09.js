@@ -9,7 +9,10 @@ buttonChangeColorBodyEl.addEventListener('click', onClickChangeColor);
 
 function onClickChangeColor(event) {
   event.preventDefault();
+
   const changedColor = getRandomHexColor();
   document.body.style.backgroundColor = changedColor;
   colorValue.textContent = changedColor;
+
+  return changedColor;
 };
