@@ -5,12 +5,12 @@ form.addEventListener('submit', onFormSubmit);
 function onFormSubmit(event) {
     event.preventDefault();
 
-    const {mail, password} = event.currentTarget.elements;
+    const { email, password } = event.currentTarget.elements;
 
-    if (!mail || !password) {
+    if (!email.value || !password.value) {
         return alert('Please, fill in all the fields');
     };
 
+    console.log({email: email.value, password: password.value});
     form.reset();
-    console.log(mail, password);
 };
